@@ -1,3 +1,14 @@
 {
-  "recommendations": ["johnsoncodehk.volar"]
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"pranaygp.vscode-css-peek",
+		"eamodio.gitlens",
+		"ecmel.vscode-html-css",
+		"pkief.material-icon-theme",
+		"christian-kohler.path-intellisense",
+		"bradlc.vscode-tailwindcss",
+		"octref.vetur"
+	]
 }
