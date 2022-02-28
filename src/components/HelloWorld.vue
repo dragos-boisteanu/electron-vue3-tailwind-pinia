@@ -13,8 +13,6 @@
 		|
 		<a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
 	</p>
-
-	<button type="button" @click="count++">count is: {{ count }}</button>
 	<p>
 		Edit
 		<code>components/HelloWorld.vue</code> to test hot module replacement.
@@ -23,7 +21,7 @@
 	<div class="flex flex-col align-top justify-center p-5 gap-y-5">
 		<div>
 			<span class="font-semibold"
-				>Counter: <span>{{ store.count }}</span></span
+				>Counter: <span>{{ count }}</span></span
 			>
 		</div>
 		<div>
@@ -64,7 +62,7 @@
 				class="p-2 rounded-sm border border-slate-700 focus:border-slate-500 text-xs text-gray-600 outline-none"
 				v-model.number="newCounterValue"
 			/>
-			<button class="px-4 py-1 rounded-sm bg-teal-800 text-white ext-center" @click="store.setCount(newCounterValue)">
+			<button class="px-4 py-1 rounded-sm bg-teal-800 text-white ext-center" @click="setCount(newCounterValue)">
 				Save
 			</button>
 		</div>
@@ -85,8 +83,17 @@ function incrementCounter() {
 	store.increment()
 }
 
+const count = computed(() => {
+	return store.count
+})
+
 function decrementCounter() {
 	store.decrement()
+}
+
+function setCount(value) {
+	store.setCount(value)
+	newCounterValue.value = 0
 }
 
 const myName = ref('')

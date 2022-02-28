@@ -1,0 +1,20 @@
+{
+	"appId": "YouAppID",
+	"asar": true,
+	"files": ["app/dist/**/*", "app/electron/**/*"],
+	"win": {
+		"target": [
+			{
+				"target": "nsis",
+				"arch": ["x64"]
+			}
+		],
+		"artifactName": "${productName}_${version}.${ext}"
+	},
+	"nsis": {
+		"oneClick": false,
+		"perMachine": false,
+		"allowToChangeInstallationDirectory": true,
+		"deleteAppDataOnUninstall": true
+	}
+}
