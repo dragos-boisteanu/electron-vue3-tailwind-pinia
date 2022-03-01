@@ -1,14 +1,16 @@
 {
 	"name": "base_app",
-	"private": true,
+	"private": false,
 	"version": "0.0.1",
 	"main": "main.js",
+	"description": "demo app for vue3, pinia, tailwindcss and electron",
+	"author": "Dragos",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
 		"dev:electron": "cross-env MODE=dev concurrently -k \"vite \" \"electron ./main.js\" ",
-		"build:electron": "cross-env MODE=production npm run build && electron-builder build  --config.asar=false",
+		"build:electron": "cross-env MODE=production npm run build && electron-builder build  --config.asar=true",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
 		"format": "prettier .  --write"
 	},

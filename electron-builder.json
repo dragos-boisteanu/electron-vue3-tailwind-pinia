@@ -1,7 +1,7 @@
 {
 	"appId": "YouAppID",
 	"asar": true,
-	"files": ["app/dist/**/*", "app/electron/**/*"],
+	"files": ["dist/**/*", "main.js", "preload.js"],
 	"win": {
 		"target": [
 			{

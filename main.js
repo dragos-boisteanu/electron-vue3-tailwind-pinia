@@ -6,7 +6,7 @@ let appPath = ''
 if (process.env.mode === 'dev') {
 	appPath = 'http://localhost:3000/'
 } else {
-	appPath = `file://${__dirname}/index.html`
+	appPath = `file://${__dirname}/dist/index.html`
 }
 
 app.whenReady().then(() => {
