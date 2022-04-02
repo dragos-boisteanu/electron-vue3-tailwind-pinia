@@ -1,5 +1,5 @@
 {
-	"name": "base_app",
+	"name": "demo_app",
 	"private": false,
 	"version": "0.0.1",
 	"main": "main.js",
