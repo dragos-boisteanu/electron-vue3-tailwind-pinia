@@ -4,7 +4,7 @@ const path = require('path')
 let appPath = ''
 
 if (process.env.mode === 'dev') {
-	appPath = 'http://localhost:3000/'
+	appPath = 'http://127.0.0.1:5173/'
 } else {
 	appPath = `file://${__dirname}/dist/index.html`
 }

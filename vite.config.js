@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: process.env.MODE === 'production' ? './' : '.',
+	base: process.env.MODE === 'production' ? './' : '',
 	plugins: [vue()],
 })
